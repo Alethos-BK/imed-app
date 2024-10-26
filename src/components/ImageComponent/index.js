@@ -4,7 +4,7 @@ import { styles } from './style';
 
 export const ImageComponent = (props) => {
     const [imageType] = useState(props.type || 'default');
-
+    
     const style = styles(props)
     const imageStyle = imageType === 'rounded' ? style.rounded : style.default;
 
@@ -12,7 +12,7 @@ export const ImageComponent = (props) => {
         <View>
             <Image
                 style={imageStyle}
-                source={{ uri: props.src }}
+                source={{uri:props.src}}
             />
         </View>
     );

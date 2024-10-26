@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-
   cardContainer: {
     width: "90%",
     borderRadius: 10,
@@ -47,4 +46,15 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     color: "#555",
   },
+  iconContainer: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    padding: 20,
+  },
+  favoriteIcon: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+  }
 })

@@ -3,7 +3,7 @@ import { styles } from "./styles"
 import { TouchableOpacity } from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 
-export const FavoritedIcon = () => {
+export const FavoritedIcon = (props) => {
   const [isFavorited, setIsFavorited] = useState(false);
 
   function toggleFavorite() {
@@ -12,10 +12,10 @@ export const FavoritedIcon = () => {
 
   return (
     <TouchableOpacity
-      style={styles.iconContainer}
+      style={props.iconContainer}
       onPress={toggleFavorite}>
       <Ionicons
-        style={styles.favoriteIcon}
+        style={props.favoriteIcon}
         name={isFavorited ? "heart" : "heart-outline"}
         color="red"
         size={23}

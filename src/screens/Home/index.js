@@ -1,14 +1,33 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { Card } from "../../components/Home/Card";
-import { ImageComponent } from "../../components/ImageComponent";
+import { RecommendationCard } from "../../components/Home/RecommendationCard";
 
 export const Home = () => {
+
+  const mockData = {
+    Name: 'Dr. João Silva',
+    AvgScore: 4.5,
+    Specialties: ['Cardiologia', 'Pediatria', 'Dermatologia'],
+  };
+
   return (
     <View>
-      <ImageComponent src="https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-uma-pessoa-com-oculos-de-sol_23-2149436188.jpg?t=st=1729962486~exp=1729966086~hmac=6d7d46015f8a3a64e048c9cede80594b32504c498d83f8b7a2f41189d5626f8c&w=740" />
-      <Card />
-      <Text>Tela Main</Text>
+      <RecommendationCard/>
+      <Card
+        Name={mockData.Name}
+        AvgScore={mockData.AvgScore}
+        Specialties={mockData.Specialties}
+      />
     </View>
   )
 }
+
+export const styles = () => StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    padding: 16,
+    backgroundColor: "#f9f9f9",
+  }
+})
