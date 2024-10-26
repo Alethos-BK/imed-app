@@ -1,10 +1,15 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 import { MyTabs } from './src/router/TabNavigation';
 
 export default function App() {
   return (
     <NavigationContainer>
+      <StatusBar
+        hidden={false}
+        translucent={true}
+        style={"light"}
+      />
       <MyTabs />
     </NavigationContainer>
   );
