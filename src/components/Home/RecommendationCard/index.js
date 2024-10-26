@@ -19,7 +19,7 @@ export const RecommendationCard = (props) => {
                     <View style={style.container}>
                         <View style={style.starContainer}>
                             <Ionicons name="star" color="#f9d978" size={20}></Ionicons>
-                            <Text style={style.text}>4,8</Text>
+                            <Text style={style.text}>{props.AvgScore}</Text>
                         </View>
                         <View style={style.heartContainer}>
                             <FavoritedIcon/>
@@ -37,8 +37,8 @@ export const RecommendationCard = (props) => {
                     height={40}
                 />
                 <View>
-                    <Text style={style.doctorTitle}>Janaina Silva</Text>
-                    <Text>Cardiologista</Text>
+                    <Text style={style.doctorTitle}>{props.Name}</Text>
+                    <Text>{props.MainSpecialtie}</Text>
                 </View>
             </View>
 

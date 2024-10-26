@@ -11,9 +11,19 @@ export const Home = () => {
     Specialties: ['Cardiologia', 'Pediatria', 'Dermatologia'],
   };
 
+  const mockRecomendation = {
+    Name: "Janaina Silva",
+    AvgScore: 4.8,
+    MainSpecialtie: "Cardiologia"
+  }
+
   return (
     <View>
-      <RecommendationCard/>
+      <RecommendationCard
+        Name={mockRecomendation.Name}
+        AvgScore={mockRecomendation.AvgScore}
+        MainSpecialtie={mockRecomendation.MainSpecialtie}
+      />
       <Card
         Name={mockData.Name}
         AvgScore={mockData.AvgScore}
