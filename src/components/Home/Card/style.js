@@ -2,11 +2,11 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   cardContainer: {
-    width: "90%",
+    width: "100%",
     borderRadius: 10,
     backgroundColor: "#fff",
     padding: 10,
-    marginVertical: 10,
+    marginVertical: 4,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,

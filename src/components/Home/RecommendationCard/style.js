@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 export const styles = (props) => StyleSheet.create({
+    cardContainer: {
+        marginBottom: 20,
+        alignItems: 'center',
+    },
     size: {
         width: props.width || 200,
         height: props.height || 200,
@@ -44,6 +48,7 @@ export const styles = (props) => StyleSheet.create({
         paddingLeft: 5
     },
     infoContainer: {
+        gap: 5,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
