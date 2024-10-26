@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, FlatList, StyleSheet, ScrollView } from "react-native";
+import { Text, View, FlatList, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { Card } from "../../components/Home/Card";
 import { RecommendationCard } from "../../components/Home/RecommendationCard";
 
@@ -37,7 +37,7 @@ export const Home = () => {
       Specialties: ['Cardiologia', 'Pediatria', 'Dermatologia'],
     }
   ]
-    
+
   const mockRecomendation = [
     {
       Id: 1,
@@ -61,11 +61,11 @@ export const Home = () => {
 
   const renderRecommendation = ({ item }) => {
     return (
-        <RecommendationCard 
-            Name={item.Name}
-            AvgScore={item.AvgScore}
-            MainSpecialtie={item.MainSpecialtie}
-        />
+      <RecommendationCard
+        Name={item.Name}
+        AvgScore={item.AvgScore}
+        MainSpecialtie={item.MainSpecialtie}
+      />
     );
   };
 
@@ -84,7 +84,9 @@ export const Home = () => {
     <ScrollView style={{ flex: 1 }}>
       <View style={styles.firstTitleContainer}>
         <Text style={styles.h1Title}>Médico Recomendados</Text>
-        <Text style={styles.linkText}>Ver mais</Text>
+        <TouchableOpacity>
+          <Text style={styles.linkText}>Ver mais</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.flatListRecommendation}>
@@ -104,9 +106,9 @@ export const Home = () => {
 
 
       <View style={styles.flatListGeneral}>
-        {mockCards.map((item) => renderGeneral({item}))}
+        {mockCards.map((item) => renderGeneral({ item }))}
       </View>
-      
+
     </ScrollView>
   )
 }
@@ -132,7 +134,7 @@ export const styles = StyleSheet.create({
     padding: 20
   },
   h1Title: {
-    fontWeight:'bold',
+    fontWeight: 'bold',
     fontSize: 20
   },
   linkText: {

@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home } from '../screens/Home';
-import { Classificate } from '../screens/Classificate';
+import { Symptoms } from '../screens/Symptoms';
 import { Check } from '../screens/Check';
 import { Profile } from '../screens/Profile';
 import { Ionicons } from '@expo/vector-icons';
@@ -18,11 +18,11 @@ export function MyTabs() {
       }} name="Home" component={Home} />
 
       <Tab.Screen options={{
-        title: "Risco",
+        title: "Sintomas",
         tabBarIcon: ({ color, size }) => (
           <Ionicons name="alert-circle-outline" color={color} size={size} />
         )
-      }} name="Classificate" component={Classificate} />
+      }} name="Sintomas" component={Symptoms} />
 
       <Tab.Screen options={{
         title: "Consultas",
