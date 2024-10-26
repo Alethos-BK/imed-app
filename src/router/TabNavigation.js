@@ -18,7 +18,7 @@ export function MyTabs() {
       }} name="Home" component={Home} />
 
       <Tab.Screen options={{
-        title: "Classificação Risco",
+        title: "Risco",
         tabBarIcon: ({ color, size }) => (
           <Ionicons name="alert-circle-outline" color={color} size={size} />
         )
