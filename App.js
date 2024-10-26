@@ -1,8 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { MyTabs } from './src/services/TabNavigation';
-import { ButtonComponent } from './src/components/buttonComponent/index'
 
 export default function App() {
   return (
