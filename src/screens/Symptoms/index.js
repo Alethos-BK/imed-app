@@ -3,6 +3,7 @@ import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./style";
 import { Input } from "../../components/Shared/Input";
 import { Check } from "../../components/Shared/Check";
+import { Button } from "../../components/Shared/Button";
 
 export const Symptoms = () => {
   const [name, setName] = useState('');
@@ -74,9 +75,7 @@ export const Symptoms = () => {
         onChangeText={setMedicalHistory}
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-        <Text style={styles.buttonText}>Encontrar Médico</Text>
-      </TouchableOpacity>
+      <Button label="Encontrar Médico" />
     </ScrollView>
   )
 }
