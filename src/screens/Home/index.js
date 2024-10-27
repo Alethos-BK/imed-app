@@ -108,7 +108,7 @@ export const Home = ({ navigation }) => {
                   placeholder="Encontre um especialista"
                   value={searchQuery}
                   onChangeText={text => setSearchQuery(text)}
-                  onFocus={handleFocus}
+                  onPress={handleFocus}
               />
             </View>
         </View>

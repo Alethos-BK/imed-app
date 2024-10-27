@@ -10,5 +10,6 @@ export const styles = (props) => StyleSheet.create({
     default: {
         width: props.width || 200,
         height: props.height || 200,
+        
     },
 });

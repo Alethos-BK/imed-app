@@ -56,11 +56,7 @@ export function MyTabs() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person-outline" color={color} size={size} />
           ),
-          headerTitle: "Meu Perfil",
-          headerStyle: {
-            backgroundColor: '#2198BA',
-          },
-          headerTintColor: '#ffffff',
+          headerShown: false
         }}
         name="Profile"
         component={Profile}
