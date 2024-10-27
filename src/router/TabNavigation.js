@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 export function MyTabs() {
   return (
     <Tab.Navigator>
-      
+
       <Tab.Screen
         options={{
           title: "Home",
@@ -67,15 +67,15 @@ export function MyTabs() {
       />
     </Tab.Navigator>
 
-        
+
   );
 }
 
 export function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} options={{headerShown:false}}/>
-      <Stack.Screen name="Search" component={Search} options={{headerTitle:"Busca"}}/>
+      <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+      <Stack.Screen name="Search" component={Search} options={{ headerTitle: "Busca" }} />
     </Stack.Navigator>
   );
 }

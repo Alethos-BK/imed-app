@@ -22,11 +22,6 @@ export const styles = StyleSheet.create({
     gap: 10,
     marginBottom: 20
   },
-  label: {
-    fontSize: 18,
-    marginVertical: 12,
-    color: '#333',
-  },
   checkboxContainer: {
     flexDirection: 'row',
     alignItems: 'center',
