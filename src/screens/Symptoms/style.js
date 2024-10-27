@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     flexGrow: 1,
     padding: 16,
     backgroundColor: '#f9f9f9',
-    marginTop: 20
+    
   },
   input: {
     height: 50,
@@ -49,4 +49,30 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+  label: {
+    paddingLeft: 3,
+    paddingBottom: 2,
+    fontWeight: 'bold'
+  },
+  subTitle: {
+    paddingLeft: 3,
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginBottom: 25
+  },
+  header: {
+    width: '100%',
+    height: 100,
+    marginTop: 34,
+    marginLeft: -12.5
+  },
+  headerContentContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 7
+  },
+  h1Title: {
+    fontSize: 25,
+    fontWeight: 'bold'
+  }
 })

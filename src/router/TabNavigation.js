@@ -22,7 +22,7 @@ export function MyTabs() {
           ),
           headerShown: false
         }}
-        name="Home"
+        name="MyStack"
         component={MyStack}
       />
 
@@ -32,8 +32,7 @@ export function MyTabs() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="alert-circle-outline" color={color} size={size} />
           ),
-          headerTitle: "Classificação de Risco",
-          headerTintColor: 'black',
+          headerShown: false
         }}
         name="Sintomas"
         component={Symptoms}
@@ -45,11 +44,7 @@ export function MyTabs() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="medkit-outline" color={color} size={size} />
           ),
-          headerTitle: "Minhas Consultas",
-          headerStyle: {
-            backgroundColor: '#2198BA',
-          },
-          headerTintColor: '#ffffff',
+          headerShown: false
         }}
         name="Check"
         component={Check}

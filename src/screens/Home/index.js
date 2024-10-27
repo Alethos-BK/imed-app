@@ -100,7 +100,7 @@ export const Home = ({ navigation }) => {
       <SafeAreaView style={styles.header}>
         <View style={styles.headerContentContainer}>
           <ImageComponent isLogo='true' type='rounded' width={60} height={60}/>
-          <View style={styles.containerSearch}>
+          <View>
             <View style={styles.inputContainer}>
               <Ionicons name="search" size={20} color="#7C7D7D"/>
               <TextInput
@@ -177,7 +177,8 @@ export const styles = StyleSheet.create({
   header: {
     width: '100%',
     height: 100,
-    marginTop: 10
+    marginTop: 10,
+    marginLeft: -4
   },
   headerContentContainer: {
     flexDirection: 'row',
@@ -201,7 +202,7 @@ inputContainer: {
 }, 
 
 inputSearch: {
-  width: "68%",
+  width: "72%",
   height: 40,
   borderRadius: 8,
   paddingLeft: 10
