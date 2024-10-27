@@ -6,6 +6,7 @@ import { Check } from '../screens/Check';
 import { Profile } from '../screens/Profile';
 import { Ionicons } from '@expo/vector-icons';
 import { Search } from '../screens/Search';
+import { Preference } from '../screens/Preference';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -52,17 +53,16 @@ export function MyTabs() {
 
       <Tab.Screen
         options={{
-          title: "Perfil",
+          title: "Preferência",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" color={color} size={size} />
+            <Ionicons name="settings" color={color} size={size} />
           ),
           headerShown: false
         }}
-        name="Profile"
-        component={Profile}
+        name="Preference"
+        component={Preference}
       />
     </Tab.Navigator>
-
 
   );
 }
