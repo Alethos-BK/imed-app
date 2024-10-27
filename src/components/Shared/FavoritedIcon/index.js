@@ -17,7 +17,7 @@ export const FavoritedIcon = (props) => {
       <Ionicons
         style={props.favoriteIcon}
         name={isFavorited ? "heart" : "heart-outline"}
-        color={isFavorited ? "red" : props.color}
+        color={isFavorited ? "#ff858e" : props.color}
         size={23}
       />
     </TouchableOpacity>

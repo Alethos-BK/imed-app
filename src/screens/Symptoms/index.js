@@ -31,12 +31,14 @@ export const Symptoms = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Input
+        marginBottom={12}
         placeholder="Nome"
         value={name}
         onChangeText={setName}
       ></Input>
 
       <Input
+        marginBottom={12}
         placeholder="Idade"
         keyboardType="numeric"
         value={age}
@@ -56,12 +58,14 @@ export const Symptoms = () => {
       </View>
 
       <Input
+        marginBottom={12}
         style={styles.input}
         placeholder="Duração dos Sintomas (Ex: 1 a 3 dias)"
         value={duration}
         onChangeText={setDuration}
       />
       <Input
+        marginBottom={12}
         style={styles.input}
         placeholder="Intensidade dos Sintomas (1 a 10)"
         keyboardType="numeric"
